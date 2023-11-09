@@ -22,6 +22,15 @@ code, but you can base yours on test code from other exercises.
 What is the worst-case big $\Theta$ complexity of your implementation? Add your
 answer, including your reasoning, to this markdown file.
 
+## Runtime Analysis
+The worst-case big $\Theta$ complexity of my implementation would be v. This is 
+because my implementation can at most go over every vertice twice minus one. 
+This is because it can't travel back to a node it's already visited, except when 
+backtracking. The only node it will travel to once will be the ending node. So the 
+complexity would be 2v-1, but after getting rid of constants we get v as the big 
+$\Theta$ complexity. 
+
+
 ## Bonus
 
 Implement and analyze breadth-first search.
