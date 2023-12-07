@@ -3,7 +3,8 @@ function depthFirstSearch(graph, startNode, targetNode) {
     if(startNode == targetNode){
         return [targetNode];
     }
-    for(n = 0; n < graph[startNode].length-1; n++){
+    
+    for(let n = 0; n < graph[startNode].length-1; n++){
         if(graph[graph[startNode][n]][graph[graph[startNode][n]].length-1] != "v"){
             a = [startNode].concat(depthFirstSearch(graph, graph[startNode][n], targetNode))
             if(a[a.length-1] != -1){
@@ -11,7 +12,5 @@ function depthFirstSearch(graph, startNode, targetNode) {
             a.pop()
         }
     }
-    n--
-    n--
     return [-1];
 }
