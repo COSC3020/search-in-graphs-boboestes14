@@ -17,5 +17,5 @@ graphAnswers = ["[0]", "[0,6,7,3,8,4,1]", "[0,6,7,3,8,4,1,2]", "[0,6,7,3]",
 "[0,6,7,3,8,4]", "[0,5]", "[0,6]", "[0,6,7]", "[0,6,7,3,8]"]
 
 for(jk = 0; jk < graphAnswers.length-1; jk++){
-    assert(JSON.stringify(depthFirstSearch(JSON.parse(JSON.stringify(graph)), 0, jk, 0)) == graphAnswers[jk]);
+    assert(JSON.stringify(depthFirstSearch(JSON.parse(JSON.stringify(graph)), 0, jk)) == graphAnswers[jk]);
 }
